@@ -124,6 +124,19 @@ public class ItemListActivity extends AppCompatActivity {
                 ((RecyclerView) recyclerView2).getAdapter().notifyDataSetChanged();
             }
         });
+
+        FloatingActionButton fabAddDummy = findViewById(R.id.fabAddDummy);
+        fabAddDummy.setOnClickListener( new View.OnClickListener()
+                                        {
+
+                                            @Override
+                                            public void onClick(View view) {
+                                                Log.i("fab","fabAddDummy onClick");
+                                            }
+                                        }
+
+
+        );
     }
 
     private void setupRecyclerView(@NonNull RecyclerView recyclerView, int function) {
